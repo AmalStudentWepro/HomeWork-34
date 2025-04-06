@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form</title>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+
+  <h1>Example Form</h1>
+  
+  <div class="stats">
+    <p id="total">All: 12</p>
+    <p id="required">Need: 7</p>
+    <p id="completed">Success: 7/7</p>
+    <p id="errors">Error: 4/7</p>
+  </div>
+
+  <form name="userInfo">
+    <div class="row">
+      <div class="field">
+        <label>Name</label>
+        <input class="required" type="text" name="username" />
+        <p class="hint">Need to fill</p>
+      </div>
+      <div class="field">
+        <label>Age</label>
+        <input class="required" type="text" name="age" />
+        <p class="hint">Need to fill</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Surname</label>
+        <input type="text" name="surname"/>
+      </div>
+
+      <div class="field">
+        <label>About You</label>
+        <input class="required" type="text" name="aboutYou" />
+        <p class="hint">Need to fill</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Email</label>
+        <input class="required" type="text" name="emailAddress" />
+        <p class="hint">Need to fill</p>
+      </div>
+      <div class="field">
+        <label>What is JavaScript?</label>
+        <input class="required" type="text" name="whatIsJavaScript" />
+        <p class="hint">Need to fill</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Phone number</label>
+        <input type="text" name="phoneNumber"/>
+      </div>
+
+      <div class="field">
+        <label>What is HTML?</label>
+        <input class="required" type="text" name="html"/>
+        <p class="hint">Need to fill</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Your Mom's name</label>
+        <input type="text" name="motherName"/>
+        
+      </div>
+      
+      <div class="field">
+        <label>What is CSS?</label>
+        <input class="required" type="text" name="css" />
+        <p class="hint">Need to fill</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Your Pap's name</label>
+        <input type="text" name="fatherName" />
+      </div>
+
+      <div class="field">
+        <label>Your favourite car</label>
+        <input type="text" name="favouriteCar" />
+      </div>
+    </div>
+
+    <button type="submit">Save changes</button>
+  </form>
+
+  <script src="./script.js"></script>
+</body>
+</html>
